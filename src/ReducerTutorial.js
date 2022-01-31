@@ -17,7 +17,8 @@ const ReducerTutorial = () => {
 
   return (
     <div>
-      <h1>{state.count}</h1>
+      <h2>useReducer</h2>
+      <h3>{state.count}</h3>
       <button
         onClick={() => {
           dispatch({ type: 'increment' });

@@ -12,6 +12,7 @@ const StateTutorialNew = () => {
 
   return (
     <div>
+      <h2>useState</h2>
       <input placeholder="Digit text..." onChange={onChange} />
       {inputValue}
     </div>

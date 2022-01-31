@@ -15,9 +15,10 @@ const EffectTutorial = () => {
 
   return (
     <div>
+      <h2>useEffect</h2>
       Hello<br></br>
-      <h2>{data}</h2>
-      <h2>{count}</h2>
+      <h3>{data}</h3>
+      <h3>{count}</h3>
       <button
         onClick={() => {
           setCount(count + 1);

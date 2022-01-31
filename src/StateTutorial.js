@@ -11,6 +11,7 @@ const StateTutorial = () => {
 
   return (
     <div>
+      <h2>useState</h2>
       {counter}
       <button onClick={increment}>Increment</button>
     </div>
