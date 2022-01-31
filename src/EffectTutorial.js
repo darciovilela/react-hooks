@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 
-// something must happen when page renders. In this case, load just the email of first object in array. To speciffy to just happen once, use empty []. To request API in every single click, put count inside [].
+// effect is primary used for making API calls when loads the page. In this case, load just the email of first object of array. To speciffy to just happen once, use empty []. To request API in every single click, put count inside [].
 const EffectTutorial = () => {
   const [data, setData] = useState('');
   const [count, setCount] = useState(0);
