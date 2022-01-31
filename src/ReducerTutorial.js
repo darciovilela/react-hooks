@@ -1,26 +1,26 @@
 import React, { useReducer } from 'react';
 
-// useful to keep track of more than one state declaration
+// useful to keep track more than one state declaration
 const reducer = (state, action) => {
   switch (action.type) {
-    case 'Increment':
-      return { count: state.count + 1, showText: state.showText };
+    case 'increment':
+      return { count: state.count + 1, showText: !state.showText };
     case 'toggleShowText':
-      return { count: state.count, showText: !state.showText };
+      return { count: state.count, showText: state.showText };
     default:
       return state;
   }
 };
 
 const ReducerTutorial = () => {
-  const [state, dispatch] = useReducer(reducer, { count: 0, showText: true });
+  const [state, dispatch] = useReducer(reducer, { count: 0, showText: false });
 
   return (
     <div>
       <h1>{state.count}</h1>
       <button
         onClick={() => {
-          dispatch({ type: 'Increment' });
+          dispatch({ type: 'increment' });
           dispatch({ type: 'toggleShowText' });
         }}
       >
