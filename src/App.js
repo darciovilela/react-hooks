@@ -1,4 +1,5 @@
 import React from 'react';
+import ContextTutorial from './ContextTutorial';
 import EffectTutorial from './EffectTutorial';
 import ReducerTutorial from './ReducerTutorial';
 import RefTutorial from './RefTutorial';
@@ -21,6 +22,10 @@ const App = () => {
       <br></br>
       <hr></hr>
       <RefTutorial />
+      <br></br>
+      <hr></hr>
+      <br></br>
+      <ContextTutorial />
     </div>
   );
 };
