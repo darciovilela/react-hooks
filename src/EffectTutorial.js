@@ -16,7 +16,8 @@ const EffectTutorial = () => {
   return (
     <div>
       <h2>useEffect</h2>
-      Hello<br></br>
+      <h3>Hello</h3>
+      <br></br>
       <h3>{data}</h3>
       <h3>{count}</h3>
       <button
