@@ -5,7 +5,7 @@ const User = () => {
   const { username } = useContext(AppContext);
   return (
     <div>
-      <h2>Name: {username}</h2>
+      <h3>Name: {username}</h3>
     </div>
   );
 };

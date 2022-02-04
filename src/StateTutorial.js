@@ -12,7 +12,7 @@ const StateTutorial = () => {
   return (
     <div>
       <h2>useState</h2>
-      {counter}
+      <h3>{counter}</h3>
       <button onClick={increment}>Increment</button>
     </div>
   );
