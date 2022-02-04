@@ -3,14 +3,15 @@ import React, { useState } from 'react';
 // keep track and re-render the page if state changes
 
 const initialName = () => {
-  return <h3>My name is Darcio</h3>;
+  return <h3 style={{ color: 'blue' }}>My name is Darcio</h3>;
 };
 
 const StateTutorialNew = () => {
   const [inputValue, setInputValue] = useState(initialName);
 
   const onChange = (event) => {
-    const newValue = event.target.value;
+    const secName = event.target.value;
+    const newValue = <h3 style={{ color: 'blue' }}>{secName}</h3>;
     setInputValue(newValue);
   };
 
